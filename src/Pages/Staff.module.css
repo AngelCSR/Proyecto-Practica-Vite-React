@@ -12,7 +12,7 @@ header {
     display: flex; /* Añadido */
     justify-content: center; /* Añadido */
 }
-header, nav {
+header, nav, footer {
     width: 100%;
     box-sizing: border-box;
 }
