@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+body {
+  background-color: #F2E7DC;
+  color: #1A242F;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #1A242F;
+  color: #D4AF37;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #D4AF37;
+  color: #1A242F;
+  padding: 10px;
+}
+
+footer {
+  background-color: #1A242F;
+  color: #E6E6E6;
+  padding: 20px;
+}
+      a{text-decoration: none;
+      }
+      .character-card {
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px;
+          width: 300px;
+          display: inline-block;
+          vertical-align: top;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+          transition: transform 0.2s;
+      }
+      .character-card h2 {
+          color: #8B0000;
+          margin-top: 10px;
+     }
+
+     .character-card p {
+         color: #1A242F;
+         margin: 5px 0;
+     }
+
+      .character-card:hover {
+          transform: scale(1.05);
+      }
+
+      .pagination {
+          margin-top: 20px;
+          text-align: center;
+      }
+
+      .pagination button {
+          padding: 5px 10px;
+          margin: 0 5px;
+      }
+
+      .character-card img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 5px 5px 0 0;
+      }
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100vh; /* Asegura que el body ocupe al menos el 100% del viewport */
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #root {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; /* Permite que el contenido principal crezca y ocupe el espacio disponible */
+      }
+      
+      header, nav, footer {
+        width: 100%; /* Asegura que estos elementos ocupen todo el ancho */
+      }
+      
+      .cont-imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1; /* Permite que el contenido principal crezca y ocupe el espacio disponible */
+      }
+      
+      .cont-imagen img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+      }
