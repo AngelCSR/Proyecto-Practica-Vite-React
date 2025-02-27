@@ -66,7 +66,7 @@ footer {
       
         a{text-decoration: none;
        }
-       @media (max-width: 767px) {
+       @media (max-width: 467px) {
             .character-card {
                 width: 90%; /* Ocupa casi todo el ancho en móviles */
                 margin: 10px auto; /* Centra las tarjetas en móviles */
