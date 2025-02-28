@@ -39,7 +39,7 @@ footer {
             width: 30%; /* Tres tarjetas por fila */
             margin: 10px; /* Espacio entre tarjetas */
        }
-       .character-grid { /* Nuevo contenedor */
+       .character-grid { 
         display: flex;
         flex-wrap: wrap;
         justify-content: center
@@ -66,7 +66,7 @@ footer {
       
         a{text-decoration: none;
        }
-       @media (max-width: 467px) {
+       @media (max-width: 767px) {
             .character-card {
                 width: 90%; /* Ocupa casi todo el ancho en móviles */
                 margin: 10px auto; /* Centra las tarjetas en móviles */
