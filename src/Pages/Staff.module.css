@@ -52,8 +52,8 @@ a {
     transition: transform 0.2s;
 }
 
-.character-card h2 {
-    color: #8B0000;
+ .character-grid h2 {
+    color: #4111b100;
 }
 
 .character-card p {
