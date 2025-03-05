@@ -37,7 +37,12 @@ function Gryffindor() {
         <div>
             <div className={styles['character-grid']}>
                 {currentCharacters.map(character => (
-                    <CharacterCard key={character.id} character={character} details={<p><strong>Species:</strong> {character.species}</p>} />
+                    <CharacterCard 
+                        key={character.id} 
+                        character={character} 
+                        className={styles['character-card']} // Añade esta línea
+                        details={<p><strong>Species:</strong> {character.species}</p>} 
+                    />
                 ))}
             </div>
             <div className="pagination">

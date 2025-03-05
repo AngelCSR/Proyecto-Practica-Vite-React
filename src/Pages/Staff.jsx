@@ -35,7 +35,12 @@ function Staff() {
         <div>
             <div className={styles['character-grid']}>
                 {currentStaff.map(member => (
-                    <CharacterCard key={member.id} character={member} details={<p><strong>House:</strong> {member.house}</p>} />
+                    <CharacterCard 
+                        key={member.id} 
+                        character={member} 
+                        className={styles['character-card']}
+                        details={<p><strong>House:</strong> {member.house}</p>} 
+                    />
                 ))}
             </div>
             <div className="pagination">

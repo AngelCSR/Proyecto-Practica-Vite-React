@@ -32,18 +32,24 @@ function Spells() {
     };
 
     return (
-        <div>
-            <div className={styles['character-grid']}>
-                {currentSpells.map(spell => (
-                    <CharacterCard key={spell.id} character={spell} details={<p>{spell.description}</p>} />
-                ))}
-            </div>
-            <div className="pagination">
-                <button onClick={handlePrevPage}>Anterior</button>
-                <span>{currentPage} / {totalPages}</span>
-                <button onClick={handleNextPage}>Siguiente</button>
-            </div>
-        </div>
+<div>
+        <div className={styles['character-grid']}>
+        {currentSpells.map(spell => (
+            <CharacterCard 
+                key={spell.id} 
+                character={spell} 
+                details={<p>{spell.description}</p>}
+                className={styles['character-card']}
+                
+            />
+        ))}
+    </div>
+    <div className="pagination">
+        <button onClick={handlePrevPage}>Anterior</button>
+        <span>{currentPage} / {totalPages}</span>
+        <button onClick={handleNextPage}>Siguiente</button>
+    </div>
+</div>
     );
 }
 

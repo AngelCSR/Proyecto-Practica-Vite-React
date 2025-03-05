@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Spells from './Pages/Spells';
@@ -9,7 +8,7 @@ import Ravenclaw from './Pages/Ravenclaw';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import './App.css'
+import './App.css';
 
 function App() {
   return (
@@ -24,8 +23,9 @@ function App() {
         <Route path="/gryffindor" element={<Gryffindor />} />
         <Route path="/ravenclaw" element={<Ravenclaw />} />
       </Routes>
-      <Footer text="@sddddddd   dddddddddd" />
+      <Footer text="@sddddddd   dddddddddd" />
     </BrowserRouter>
   );
 }
+
 export default App;

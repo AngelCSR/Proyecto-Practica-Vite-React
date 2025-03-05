@@ -1,94 +1,56 @@
-body {
-    background-color: #F2E7DC;
-    color: #1A242F;
-    font-family: sans-serif;
-}
-
-header {
-    text-align: center;
-    background-color: #1A242F;
-    color: #D4AF37;
-    padding: 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #D4AF37;
-    color: #1A242F;
-    padding: 10px;
-}
-
-footer {
-    background-color: #1A242F;
-    color: #E6E6E6;
-    padding: 20px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.character-grid { /* Cambiado a character-grid para consistencia */
+.character-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrar las tarjetas */
+    justify-content: center;
 }
 
-.character-card { /* Cambiado a character-card para consistencia */
+.character-card {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    width: 33.33%; /* Ajustado para 9 tarjetas por página */
+    width: 30%; /* Tres tarjetas por fila */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s;
 }
 
-.character-card h2 { /* Cambiado a character-card para consistencia */
-    color: #8B0000;
+.character-card h2 {
+    color: #921a6e;
+    margin-top: 10px;
 }
 
-.character-card p { /* Cambiado a character-card para consistencia */
+.character-card p {
     color: #1A242F;
+    margin: 5px 0;
 }
 
-.pagination {
-    margin-top: 20px;
-    text-align: center;
+.character-card:hover {
+    transform: scale(1.05);
 }
 
-.pagination button {
-    padding: 5px 10px;
-    margin: 0 5px;
+.character-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
 }
 
 @media (max-width: 767px) {
-    .character-card { /* Cambiado a character-card para consistencia */
+    .character-card {
         width: 90%;
         margin: 10px auto;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 10px 0;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .character-card { /* Cambiado a character-card para consistencia */
+    .character-card {
         width: 45%;
         margin: 10px;
     }
 }
 
 @media (min-width: 1024px) {
-    .character-card { /* Cambiado a character-card para consistencia */
-        width: 33.33%; /* Ajustado para 9 tarjetas por página */
+    .character-card {
+        width: 30%;
         margin: 10px;
     }
 }

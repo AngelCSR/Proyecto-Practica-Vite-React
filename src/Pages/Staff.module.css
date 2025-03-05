@@ -1,45 +1,7 @@
-body {
-    background-color: #F2E7DC;
-    color: #1A242F;
-    font-family: sans-serif;
-}
-
-header {
-    text-align: center;
-    background-color: #1A242F;
-    color: #D4AF37;
-    padding: 20px;
-    display: flex; /* Añadido */
-    justify-content: center; /* Añadido */
-}
-header, nav, footer {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #D4AF37;
-    color: #1A242F;
-    padding: 10px;
-    
-}
-
-footer {
-    background-color: #1A242F;
-    color: #E6E6E6;
-    padding: 20px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.character-grid { /* Nuevo contenedor */
+.character-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrar las tarjetas */
+    justify-content: center;
 }
 
 .character-card {
@@ -47,47 +9,35 @@ a {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    width: 33.33%; /* Ajustado para 9 tarjetas por página */
+    width: 30%; /* Tres tarjetas por fila */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s;
 }
 
- .character-grid h2 {
-    color: #4111b100;
+.character-card h2 {
+    color: rgb(175, 151, 14);
+    margin-top: 10px;
 }
 
 .character-card p {
     color: #1A242F;
+    margin: 5px 0;
 }
 
-.pagination {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.pagination button {
-    padding: 5px 10px;
-    margin: 0 5px;
+.character-card:hover {
+    transform: scale(1.05);
 }
 
 .character-card img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px 5px 0 0;
 }
 
 @media (max-width: 767px) {
     .character-card {
         width: 90%;
         margin: 10px auto;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 10px 0;
     }
 }
 
@@ -100,7 +50,7 @@ a {
 
 @media (min-width: 1024px) {
     .character-card {
-        width: 33.33%;
+        width: 30%;
         margin: 10px;
     }
 }

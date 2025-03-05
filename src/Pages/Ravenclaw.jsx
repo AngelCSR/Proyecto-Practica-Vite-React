@@ -5,7 +5,7 @@ import styles from './Ravenclaw.module.css';
 function Ravenclaw() {
     const [characters, setCharacters] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const charactersPerPage = 9; // Cambiado a 9
+    const charactersPerPage = 9; 
 
     useEffect(() => {
         fetch('https://hp-api.onrender.com/api/characters/house/ravenclaw')
@@ -35,7 +35,12 @@ function Ravenclaw() {
         <div>
             <div className={styles['character-grid']}>
                 {currentCharacters.map(character => (
-                    <CharacterCard key={character.id} character={character} details={<p><strong>Species:</strong> {character.species}</p>} />
+                    <CharacterCard 
+                        key={character.id} 
+                        character={character} 
+                        className={styles['character-card']} 
+                        details={<p><strong>Species:</strong> {character.species}</p>} 
+                    />
                 ))}
             </div>
             <div className="pagination">

@@ -35,17 +35,22 @@ function Characters() {
 
     return (
         <div>
-            <div className={styles['character-grid']}>
-                {currentCharacters.map(character => (
-                    <CharacterCard key={character.id} character={character} details={<p><strong>Species:</strong> {character.species}</p>} />
-                ))}
-            </div>
-            <div className="pagination">
-                <button onClick={handlePrevPage}>Anterior</button>
+      <div className={styles['character-grid']}>
+        {currentCharacters.map(character => (
+          <CharacterCard 
+            key={character.id} 
+            character={character} 
+            className={styles['character-card']} // Añade la clase character-card
+            details={<p><strong>Species:</strong> {character.species}</p>} 
+          />
+        ))}
+      </div>
+      <div className="pagination">
+      <button onClick={handlePrevPage}>Anterior</button>
                 <span>{currentPage} / {totalPages}</span>
                 <button onClick={handleNextPage}>Siguiente</button>
-            </div>
-        </div>
+      </div>
+    </div>
     );
 }
 

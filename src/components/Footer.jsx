@@ -1,6 +1,7 @@
 function Footer({ text }) {
-    return (
-      <footer>{text}</footer>
-    );
-  }
-  export default Footer;
+  return (
+    <footer>{text}</footer>
+  );
+}
+
+export default Footer;
