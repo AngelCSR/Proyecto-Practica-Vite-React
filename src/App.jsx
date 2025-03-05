@@ -23,7 +23,7 @@ function App() {
         <Route path="/gryffindor" element={<Gryffindor />} />
         <Route path="/ravenclaw" element={<Ravenclaw />} />
       </Routes>
-      <Footer text="@sddddddd   dddddddddd" />
+      <Footer text="@Fandom   Harry Potter" />
     </BrowserRouter>
   );
 }
