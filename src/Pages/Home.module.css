@@ -13,45 +13,6 @@ a{text-decoration: none;
     max-width: 100%; 
     max-height: 100%;
   }
-header {
-    text-align: center;
-    background-color: #1A242F;
-    color: #D4AF37;
-    padding: 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #D4AF37;
-    color: #1A242F;
-    padding: 10px;
-}
-
-footer {
-    background-color: #1A242F;
-    color: #E6E6E6;
-    padding: 20px;
-}
-body {
-    background-color: #F2E7DC;
-    color: #1A242F;
-    font-family: sans-serif;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* viewport height */
-  }
-  
-  footer {
-    margin-top: auto; /* Empuja el footer hacia abajo */
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
- 
 
   @media (max-width: 767px) {
    
